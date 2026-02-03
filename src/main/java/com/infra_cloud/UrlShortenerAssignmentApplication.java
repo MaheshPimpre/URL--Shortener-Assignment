@@ -1,0 +1,14 @@
+package com.infra_cloud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UrlShortenerAssignmentApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UrlShortenerAssignmentApplication.class, args);
+		System.out.println("Application started ......");
+	}
+
+}
