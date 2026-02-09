@@ -44,7 +44,7 @@ class UrlControllerTest {
                         .content(requestBody))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.shortUrl")
-                        .value("http://localhost:8080/r/abc123"));
+                        .value("http://localhost:8080/abc123"));
     }
 
 
@@ -66,7 +66,7 @@ class UrlControllerTest {
                         .content(requestBody))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.shortUrl")
-                        .value("http://localhost:8080/r/same123"));
+                        .value("http://localhost:8080/same123"));
     }
     // --------------------------
     // TEST 3: POST /api/shorten - Missing URL field

@@ -20,7 +20,7 @@ public class UrlController {
 
     // POST /api/shorten - Generating shorten url
     // Shorten API - returns SAME short URL for SAME original URL
-    @PostMapping("/shorten")
+    @PostMapping("/shorten")// http://localhost:8080/api/shorten
     public ResponseEntity<?> shortenUrl(@RequestBody Map<String, String> request) {
 
         String originalUrl = request.get("url");
